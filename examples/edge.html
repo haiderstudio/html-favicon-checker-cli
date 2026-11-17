@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Edge cases</title>
+<link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+<p>Shortcut icon, relative path.</p>
+<LINK REL="ICON" HREF="/favicon.ico">
+<p>Uppercase tag and attributes.</p>
+<link href="/favicon.ico">
+<p>A link to favicon.ico with no rel still counts.</p>
+<style>
+/* A favicon link in a style block is not a link: */
+.fake { content: "<link rel=\"icon\" href=\"/fake.ico\">"; }
+</style>
+</body>
+</html>
